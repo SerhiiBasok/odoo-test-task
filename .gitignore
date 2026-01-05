@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environment
+venv/
+.env
+
+# Odoo specific
+*.log
+*.db
+*.sqlite
+*.backup
+*.dump
+*.swp
+
+# PyCharm
+.idea/
+.idea
+*.iml
+*.iws
+
+# Byte-compiled / cache
+*.so
+*.egg-info/
+*.egg
+
+# Node / assets (якщо використовуєш npm, yarn)
+node_modules/
+*.sass-cache
+*.cache
+
+# MacOS
+.DS_Store
+
+# Optional Odoo temp / session files
+filestore/
+sessions/
+web/session_db/*.db
