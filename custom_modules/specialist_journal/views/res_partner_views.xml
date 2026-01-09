@@ -1,0 +1,30 @@
+<odoo>
+    <record id="view_partner_form_journal" model="ir.ui.view">
+        <field name="name">res.partner.form.journal</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Journal">
+                    <field name="journal_entry_ids"
+                           mode="tree,form">
+                        <list editable="bottom">
+                            <field name="date"/>
+                            <field name="user_id"/>
+                            <field name="note"/>
+                        </list>
+                        <form>
+                            <sheet>
+                                <group>
+                                    <field name="date"/>
+                                    <field name="user_id"/>
+                                    <field name="note"/>
+                                </group>
+                            </sheet>
+                        </form>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
